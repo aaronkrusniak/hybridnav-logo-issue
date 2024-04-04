@@ -5,9 +5,27 @@ website:
   title: "website-testing"
   navbar:
     left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
+      - text: Home
+        file: index.qmd
+      - text: About this Site
+        file: about.qmd
+
+
+  sidebar:
+    - title: Home
+      logo: seurat.jpg
+      contents:
+        - text: Home
+          file: index.qmd
+
+    - title: About this Site
+      contents:
+        - text: About
+          file: about.qmd
+        - text: More Info
+          file: about2.qmd
+        - text: Bibliography
+          file: about3.qmd
 
 format:
   html:
@@ -15,5 +33,4 @@ format:
     css: styles.css
     toc: true
 
-editor: visual
 
